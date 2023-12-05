@@ -43,6 +43,8 @@ for file in oss_files:
 
 # Git operations
 print("Running Git operations...")
+
+subprocess.run(['git', '-C', REPO_PATH, 'pull', 'origin', 'main'])
 subprocess.run(['git', '-C', REPO_PATH, 'add', '.'])
 subprocess.run(['git', '-C', REPO_PATH, 'commit', '-m', 'Sync new files from OSS'])
 subprocess.run(['git', '-C', REPO_PATH, 'push'])
