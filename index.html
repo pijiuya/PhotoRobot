@@ -39,11 +39,7 @@
             color: white;
         }
 
-        #title {
-            font-size: 2em;
-            opacity: 0;
-            transition: opacity 2s;
-        }
+      
 
         #nextPageButton {
             margin-top: 20px;
@@ -63,15 +59,15 @@
 <body>
     <div class="background-image"></div>
     <div class="content">
-        <h1 id="title"></h1>
-        <img src="logo.png" alt="Logo" id="logo" style="opacity: 0;">
+        
+        
         <button id="nextPageButton">Click Here</button>
     </div>
 
     <script>
         window.onload = function() {
-            document.getElementById('title').style.opacity = 1;
-            document.getElementById('logo').style.opacity = 1;
+        
+          
 
             document.getElementById('nextPageButton').addEventListener('click', function() {
                 window.location.href = 'gallery.html'; // 更改为您的下一个页面的URL
